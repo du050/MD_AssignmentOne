@@ -1,11 +1,17 @@
 import React from "react";
-import { StyleSheet, View, Text, TouchableOpacity, ScrollView } from "react-native";
+import { StyleSheet, View, Text, TouchableOpacity, ScrollView, Alert } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import PhotoGrid from "../components/PhotoGrid";
 import BottomNav from "../components/BottomNav";
 
 
 const HomeScreen = () => {
+
+  const handlePlusButtonPress = () => {
+    Alert.alert("Add New Item", "You pressed the plus button!");
+  };
+
+
   return (
     <View style={styles.container}>
       {/* Header */}
@@ -20,7 +26,7 @@ const HomeScreen = () => {
       {/* Bottom Navigation */}
       <BottomNav />
       <TouchableOpacity style={styles.plusButton}>
-        <Text style={styles.plusButtonText}>+</Text>
+        <Text style={styles.plusButtonText} onPress={handlePlusButtonPress}>+</Text>
       </TouchableOpacity>
     </View>
   );
