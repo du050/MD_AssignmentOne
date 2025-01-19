@@ -55,18 +55,18 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   plusButton: {
-    position: 'absolute', // Fixed position for the button
-    bottom: 80, // Distance from the bottom of the screen
-    right: 20, // Distance from the right side of the screen
-    backgroundColor: 'rgba(0, 0, 0, 0.5)', // Dark background for visibility
+    position: 'absolute', 
+    bottom: 80,
+    right: 20, 
+    backgroundColor: 'rgba(0, 0, 0, 0.5)', 
     width: 60,
     height: 60,
-    borderRadius: 30, // Circular button
+    borderRadius: 30, 
     justifyContent: 'center',
     alignItems: 'center',
   },
   plusButtonText: {
     fontSize: 36,
-    color: 'white', // Color of the '+' text
+    color: 'white', 
   },
 });
